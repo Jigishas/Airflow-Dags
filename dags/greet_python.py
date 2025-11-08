@@ -1,5 +1,5 @@
 from airflow import DAG
-from airflow.operators.python import pythonOperator
+from airflow.operators.python import PythonOperator
 from datetime import datetime,timedelta
 
 default_args= { 
@@ -18,9 +18,9 @@ with DAG (
     start_date=datetime(2025, 11, 7 ),
     schedule_interval='@daily'
     ) as dag:
-    task1=pythonOperator(
+    task1=PythonOperator(
         task_id='greet',
-        python_callable=greet,
+        python_callable=greet
 
     )
 
