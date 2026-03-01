@@ -21,3 +21,4 @@ with DAG(
         task_id='my new dag',
         bash_command="echo this is a new dag now!"
     )
+task1

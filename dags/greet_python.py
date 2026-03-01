@@ -15,7 +15,7 @@ with DAG (
     dag_id='python_greet',
     default_args=default_args,
     description='this is a DAG python operator',
-    start_date=datetime(2025, 11, 7 ),
+    start_date=datetime(2026, 1, 12 ),
     schedule_interval='@daily'
     ) as dag:
     task1=PythonOperator(
