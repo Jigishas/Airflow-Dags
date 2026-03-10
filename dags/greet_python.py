@@ -10,6 +10,7 @@ default_args= {
 
 def greet():
     print("hello there !")
+    print(time.now)
 
 with DAG (
     dag_id='python_greet',
